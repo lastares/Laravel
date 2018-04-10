@@ -20,14 +20,13 @@ $m3Email->to = $email;
 $m3Email->cc = '862761213@qq.com';
 $m3Email->subject = '凯恩书店验证';
 $m3Email->content = '请于24小时内点击链接完成验证，http:://www.bookshop.com/service/validate_email'
-					. '&member_id=' . $member->id
-					. '&code=' . $uuid;
+                    . '&member_id=' . $member->id
+                    . '&code=' . $uuid;
 Mail::send('email_register', ['m3Email' => $m3Email], function($m) use ($m3Email){
-	$m->to($m3Email->to, '尊敬的用户')
-	  ->cc($m3Email->cc)
-	  ->subject($m3Email->subject);
+    $m->to($m3Email->to, '尊敬的用户')
+      ->cc($m3Email->cc)
+      ->subject($m3Email->subject);
 });
-
 ```
 
 
