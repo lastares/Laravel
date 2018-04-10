@@ -1,6 +1,7 @@
-```php
-<?php
+##### 方法1
 
+```
+<?php
 
 namespace App\Http\Controllers\Trade;
 
@@ -12,7 +13,7 @@ trait FormFields
 {
     public function validCreateOrder(Request $request)
     {
-       
+
         // ====== 订单信息 ======
         $rules['type_order'] = 'required';
         $rules['purchase_name'] = 'required|string|between:4,20';
@@ -41,7 +42,7 @@ trait FormFields
         $validation = Validator::make($request->all(), $rules, $error);
         return $validation->fails() ? $validation->errors()->first() : true;
     }
-    
+
 #################################################################
 #使用方法：                                                     #
 #        $valid = $this->validCreateOrder($request);            #
@@ -50,8 +51,11 @@ trait FormFields
 #       }                                                       #
 #                                                               #
 #################################################################
-
 ```
+
+##### 方法2
+
+
 
 
 
