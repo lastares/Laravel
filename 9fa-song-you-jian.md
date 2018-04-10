@@ -31,3 +31,29 @@ Mail::send('email_register', ['m3Email' => $m3Email], function($m) use ($m3Email
 
 
 
+##### 方法2
+
+```
+function send_email($email, $name, $subject, $data = [], $template = 'emails.test')
+    {
+        Mail::send($template, $data, function ($message) use ($email, $name, $subject) {
+            //如果是数组；则群发邮件
+            if (is_array($email)) {
+                foreach ($email as $k => $v) {
+                    $message->to($v, $name)->subject($subject);
+                }
+            } else {
+                $message->to($email, $name)->subject($subject);
+            }
+        });
+        if (count(Mail::failures()) > 0) {
+            $data = ['status_code' => 500, 'message' => '邮件发送失败'];
+        } else {
+            $data = ['status_code' => 200, 'message' => '邮件发送成功'];
+        }
+        return $data;
+    }
+```
+
+
+
