@@ -32,19 +32,22 @@ $where[] = ["brand_name", 'like', '%' . $brand_name . '%'];
 ##### 方法3
 
 ```
+// controller接收参数
 $search = [
             'title' => $title,
             'name' => $name,
         ];
 // model
-if (isset($search['type_title'])) {
-    $query = $query->where('type_title', 'like', '%' . $search['type_title'] . '%');
+public function list2(array $search=[]) {
+    if (isset($search['type_title'])) {
+        $query = $query->where('title', 'like', '%' . $search['title'] . '%');
+    }
+    if (isset($search['brand_title'])) {
+        $query = $query->where('brand_title', 'like', '%' . $search['brand_title'] . '%');
+    }
+    $res = $query->select('*')->orderBy('id', 'desc')->paginate(15);
+    return $res;
 }
-if (isset($search['brand_title'])) {
-    $query = $query->where('brand_title', 'like', '%' . $search['brand_title'] . '%');
-}
-$res = $query->select('*')->orderBy('id', 'desc')->paginate(15);
-return $res;  
 ```
 
 
