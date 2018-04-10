@@ -1,3 +1,5 @@
+##### 方法1
+
 ```
 1.配置.env文件
 MAIL_DRIVER=smtp
@@ -28,8 +30,6 @@ Mail::send('email_register', ['m3Email' => $m3Email], function($m) use ($m3Email
       ->subject($m3Email->subject);
 });
 ```
-
-
 
 ##### 方法2
 
