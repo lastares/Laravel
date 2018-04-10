@@ -27,7 +27,24 @@ $where[] = ["mobile", 'like', '%' . $mobile . '%'];
 
 $brand_name = trim(request()->input('brand_name', ''));
 $where[] = ["brand_name", 'like', '%' . $brand_name . '%'];
+```
 
+##### 方法3
+
+```
+$search = [
+            'title' => $title,
+            'name' => $name,
+        ];
+// model
+if (isset($search['type_title'])) {
+    $query = $query->where('type_title', 'like', '%' . $search['type_title'] . '%');
+}
+if (isset($search['brand_title'])) {
+    $query = $query->where('brand_title', 'like', '%' . $search['brand_title'] . '%');
+}
+$res = $query->select('*')->orderBy('id', 'desc')->paginate(15);
+return $res;  
 ```
 
 
