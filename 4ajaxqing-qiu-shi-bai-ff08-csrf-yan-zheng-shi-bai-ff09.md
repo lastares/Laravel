@@ -3,7 +3,6 @@
 beforeSend: function(request) {
     return request.setRequestHeader('X-CSRF-Token', $("meta[name='_token']").attr('content'));
 }
-
 ```
 
 
