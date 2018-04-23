@@ -55,7 +55,54 @@ trait FormFields
 
 ##### 方法2
 
+```
+protected  static function validBaseInfo($params)
+    {
+        $rules = [
+            'salesman_id' => 'required|numeric',
+            //'salesman_name' => 'required',
+            'username' => 'required',
+            'mobile'    => 'required',
+            'ID_card' => 'required',
 
+            //'payment_nature' => 'required|numeric|in:1,2,3',//款项性质
+            //'pay_type' => 'required|numeric|in:1,2,3,4,5,6',//付款方式
+            //'summary' => 'max:255',//zhaiyao
+        ];
+        $errors = [
+            'required' => ':attribute不能为空',
+            //'payment_nature.in' => '款项性质不在列表内，请先确认～',
+            //'pay_type.in' => '付款方式不在列表内，请先确认～',
+            //'product_plan.max' => '方案名称不能超过30字',
+        ];
+        $attr = [
+            'salesman_id' => '业务员信息',
+            //'salesman_name' => '业务员姓名',
+            'username' => '申请人姓名',
+            'mobile'    => '申请人手机号',
+            'ID_card' => '申请人身份证号',
+            'ID_car_sdate' => '申请人身份证有效期',
+            'ID_car_edate' => '申请人身份证有效期',
+            'birth_date' => '申请人出生年月',
+            'gender' => '申请人性别',
+        ];
+        $validator = Validator::make($params, $rules, $errors, $attr);
+        if ($validator->fails())
+        {
+            return  current(current($validator->errors()->toArray()));
+        }
+    }
+    
+    
+    
+#################################################################
+# 使用方法：
+# $valid = self::validBaseInfo($params['base_info']);
+# if(!empty($valid)){
+#    return $this->returnData(1, $valid);
+# }
+#################################################################
+```
 
 
 
