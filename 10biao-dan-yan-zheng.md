@@ -92,9 +92,9 @@ protected  static function validBaseInfo($params)
             return  current(current($validator->errors()->toArray()));
         }
     }
-    
-    
-    
+
+
+
 #################################################################
 # 使用方法：
 # $valid = self::validBaseInfo($params['base_info']);
@@ -102,6 +102,14 @@ protected  static function validBaseInfo($params)
 #    return $this->returnData(1, $valid);
 # }
 #################################################################
+
+```
+
+##### 方法3
+
+```
+1.php artisan make:request CreateUserRequest
+
 ```
 
 
