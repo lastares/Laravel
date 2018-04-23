@@ -11,4 +11,5 @@
 * [8.列表搜索](8lie-biao-sou-suo.md)
 * [9.发送邮件](9fa-song-you-jian.md)
 * [10.表单验证](10biao-dan-yan-zheng.md)
+* [11.laravel的社会化登录](11laravelde-she-hui-hua-deng-lu.md)
 
