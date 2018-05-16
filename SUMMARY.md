@@ -13,4 +13,5 @@
 * [10.表单验证](10biao-dan-yan-zheng.md)
 * [11.laravel的社会化登录](11laravelde-she-hui-hua-deng-lu.md)
 * [12.laravel的优缺点](12laravelde-que-dian.md)
+* [13.laravel中使用自己的类](13laravelzhong-shi-yong-zi-ji-de-lei.md)
 
