@@ -8,6 +8,7 @@ https://packagist.org/packages/latrell/alipay
 
 ```
 https://packagist.org/packages/lokielse/
+composer require lokielse/omnipay-alipay
 composer require overtrue/laravel-wechat 2.1.*
 ```
 
