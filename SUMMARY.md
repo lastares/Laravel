@@ -15,4 +15,5 @@
 * [12.laravel的优缺点](12laravelde-que-dian.md)
 * [13.laravel中使用自己的类](13laravelzhong-shi-yong-zi-ji-de-lei.md)
 * [14.laravel众多拓展包地址](14laravelzhong-duo-tuo-zhan-bao-di-zhi.md)
+* [15. Tips](asfd.md)
 
