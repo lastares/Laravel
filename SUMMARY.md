@@ -16,4 +16,5 @@
 * [13.laravel中使用自己的类](13laravelzhong-shi-yong-zi-ji-de-lei.md)
 * [14.laravel众多拓展包地址](14laravelzhong-duo-tuo-zhan-bao-di-zhi.md)
 * [15. Tips](asfd.md)
+* [16.php7.3下laravel框架使用count\(\)函数报错](16php73xialaravel-kuang-jia-shi-yong-count-han-shu-bao-cuo.md)
 
