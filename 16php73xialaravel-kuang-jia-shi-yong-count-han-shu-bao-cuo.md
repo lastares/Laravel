@@ -11,7 +11,6 @@ if(is_array($query->wheres)) {
     $originalWhereCount = count($query->wheres);
     }
 }
-
 ```
 
 
