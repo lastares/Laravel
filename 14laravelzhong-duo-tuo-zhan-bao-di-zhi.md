@@ -12,5 +12,11 @@ composer require lokielse/omnipay-alipay
 composer require overtrue/laravel-wechat 2.1.*
 ```
 
+3.ElasticSearch拓展包
+
+```
+https://github.com/elasticquent/Elasticquent#setting-a-custom-index-name
+```
+
 
 
