@@ -1,6 +1,7 @@
 # Summary
 
 * [18.Laravel 的十八个最佳实践](18laravel-de-shi-ba-ge-zui-jia-shi-jian.md)
+* [19.使用swoole加速laravel应用](19shi-yong-swoole-jia-su-laravel-ying-yong.md)
 * [一.常用杂项](README.md)
 * [1.调试工具laravel-debug使用](1diao-shi-gong-ju-laravel-debug-shi-yong.md)
 * [2.设置自定义自动加载函数](2she-zhi-zi-ding-yi-zi-dong-jia-zai-han-shu.md)
