@@ -1,5 +1,6 @@
 # Summary
 
+* [18.Laravel 的十八个最佳实践](18laravel-de-shi-ba-ge-zui-jia-shi-jian.md)
 * [一.常用杂项](README.md)
 * [1.调试工具laravel-debug使用](1diao-shi-gong-ju-laravel-debug-shi-yong.md)
 * [2.设置自定义自动加载函数](2she-zhi-zi-ding-yi-zi-dong-jia-zai-han-shu.md)
@@ -15,7 +16,7 @@
 * [12.laravel的优缺点](12laravelde-que-dian.md)
 * [13.laravel中使用自己的类](13laravelzhong-shi-yong-zi-ji-de-lei.md)
 * [14.laravel众多拓展包地址](14laravelzhong-duo-tuo-zhan-bao-di-zhi.md)
-* [15. Tips](asfd.md)
+* [15. Laravel Eloquent 小技巧](asfd.md)
 * [16.php7.3下laravel框架使用count\(\)函数报错](16php73xialaravel-kuang-jia-shi-yong-count-han-shu-bao-cuo.md)
 * [17.短信发送组件](17duan-xin-fa-song-zu-jian.md)
 
